@@ -2,41 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Professional Portfolio Design System for Mohcine Benkhalifa */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 0 0% 98%;
+    --foreground: 220 20% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 220 20% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 20% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 215 100% 25%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 215 100% 30%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 220 20% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 15% 96%;
+    --muted-foreground: 220 10% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 215 100% 40%;
+    --accent-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 215 100% 25%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Professional gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 100% 25%) 0%, hsl(215 100% 35%) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(0 0% 98%) 0%, hsl(220 15% 96%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(215 100% 25%) 0%, hsl(215 80% 30%) 50%, hsl(215 60% 35%) 100%);
+
+    /* Professional shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(220 20% 15% / 0.1), 0 2px 4px -1px hsl(220 20% 15% / 0.06);
+    --shadow-medium: 0 10px 15px -3px hsl(220 20% 15% / 0.1), 0 4px 6px -2px hsl(220 20% 15% / 0.05);
+    --shadow-large: 0 25px 50px -12px hsl(220 20% 15% / 0.25);
+    --shadow-primary: 0 10px 30px -10px hsl(215 100% 25% / 0.3);
+
+    /* Smooth transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +114,112 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    line-height: 1.6;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  /* Hero variants */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .hero-text {
+    @apply text-primary-foreground;
+  }
+
+  /* Professional card styles */
+  .professional-card {
+    @apply bg-card rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
+    box-shadow: var(--shadow-soft);
+  }
+
+  .professional-card:hover {
+    box-shadow: var(--shadow-medium);
+    transform: translateY(-2px);
+  }
+
+  /* Skill badge */
+  .skill-badge {
+    @apply bg-primary/10 text-primary px-3 py-1 rounded-full text-sm font-medium;
+    transition: var(--transition-smooth);
+  }
+
+  .skill-badge:hover {
+    @apply bg-primary text-primary-foreground;
+    box-shadow: var(--shadow-primary);
+  }
+
+  /* Section styles */
+  .section-padding {
+    @apply py-16 px-4 md:px-6 lg:px-8;
+  }
+
+  .section-container {
+    @apply max-w-6xl mx-auto;
+  }
+
+  /* Animation utilities */
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out;
+  }
+}
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px hsl(220 20% 15% / 0.1);
+  }
+
+  .gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
   }
 }

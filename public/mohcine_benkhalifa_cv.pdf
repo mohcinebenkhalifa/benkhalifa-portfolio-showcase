@@ -1,0 +1,104 @@
+%PDF-1.4
+1 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+
+2 0 obj
+<<
+/Type /Pages
+/Kids [3 0 R]
+/Count 1
+>>
+endobj
+
+3 0 obj
+<<
+/Type /Page
+/Parent 2 0 R
+/MediaBox [0 0 612 792]
+/Contents 4 0 R
+/Resources <<
+/Font <<
+/F1 5 0 R
+>>
+>>
+>>
+endobj
+
+4 0 obj
+<<
+/Length 1200
+>>
+stream
+BT
+/F1 18 Tf
+50 750 Td
+(MOHCINE BENKHALIFA) Tj
+0 -30 Td
+/F1 12 Tf
+(Développeur Full-Stack & Gestionnaire d'Entreprises) Tj
+0 -20 Td
+(Sidi Bennour, Maroc) Tj
+0 -15 Td
+(Email: mohcinebenkhalifa50@gmail.com) Tj
+0 -15 Td
+(Téléphone: +212 6 53 72 58 06) Tj
+0 -40 Td
+/F1 14 Tf
+(FORMATION) Tj
+0 -20 Td
+/F1 10 Tf
+(2023-2025: Développement Web Full-Stack - ISTA L'air El Jadida) Tj
+0 -15 Td
+(Licence en Gestion d'Entreprises - FSJES El Jadida) Tj
+0 -15 Td
+(DUT Sciences Économiques - FSJES El Jadida) Tj
+0 -30 Td
+/F1 14 Tf
+(COMPÉTENCES TECHNIQUES) Tj
+0 -20 Td
+/F1 10 Tf
+(- Développement: Laravel, React.js, PHP, JavaScript, HTML/CSS, MySQL, Python) Tj
+0 -15 Td
+(- Gestion: MS Office, Gestion financière, Organisation d'entreprises) Tj
+0 -30 Td
+/F1 14 Tf
+(EXPÉRIENCES PROFESSIONNELLES) Tj
+0 -20 Td
+/F1 10 Tf
+(2024-2025: Mairie de Sidi Bennour - Agent administratif) Tj
+0 -15 Td
+(2020-2023: Cabinet Comptable - Assistant comptable) Tj
+0 -15 Td
+(2020-2023: TGR Sidi Bennour - Agent de recouvrement) Tj
+ET
+endstream
+endobj
+
+5 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /Helvetica
+>>
+endobj
+
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000060 00000 n 
+0000000117 00000 n 
+0000000268 00000 n 
+0000001518 00000 n 
+trailer
+<<
+/Size 6
+/Root 1 0 R
+>>
+startxref
+1575
+%%EOF
