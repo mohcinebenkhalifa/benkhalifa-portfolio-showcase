@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to your Lovable project
 
 ## Project info
@@ -71,3 +72,19 @@ Yes, you can!
 To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
 Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+=======
+# Portfolio de Mohcine Benkhalifa
+
+Ce projet est un portfolio personnel réalisé avec React, Vite, TypeScript, shadcn-ui et Tailwind CSS.
+
+## Installation
+
+```bash
+npm install
+npm run dev
+```
+
+## Aperçu
+
+Accédez à [http://localhost:5173](http://localhost:5173) pour voir le site en local.
+>>>>>>> 832ca6126540123306718d623a8f8c4805306e0f
