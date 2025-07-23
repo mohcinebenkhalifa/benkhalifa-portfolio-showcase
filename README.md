@@ -31,7 +31,7 @@ Email : mohcinebenkhalifa50@gmail.com
 
 Téléphone : +212 6 53 72 58 06
 
-LinkedIn : Profil LinkedIn
+LinkedIn : https://www.linkedin.com/in/mohcine-benkhalifa-7a7113186/
 
 CV : Bouton pour télécharger le CV PDF depuis /public/mohcine_benkhalifa_cv.pdf.
 
